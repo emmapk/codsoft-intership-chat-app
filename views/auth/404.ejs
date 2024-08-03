@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#59A52c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+      
+        .error-container {
+            text-align: center;
+        }
+        .error-container h1 {
+            font-size: 100px;
+            margin: 0;
+        }
+        .error-container p {
+            font-size: 24px;
+        }
+        .error-container a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .error-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>ERROR</h1>
+        <p>Page Not Found</p>
+        <p><%= message %></p>
+        <p><a href="/login">Go to Homepage</a></p>
+      </div>
+</body>
+</html>
